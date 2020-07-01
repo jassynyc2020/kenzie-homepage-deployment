@@ -1,0 +1,362 @@
+/* Mobile style */
+// Global styles
+$purple: #4251f5;
+$grey: #9fa0a3;
+$blue: #1e84ea;
+$white: #ffffff;
+$red: #eb4034;
+$yellow: #ebd834;
+$pink: #de34eb;
+$green: #34eb7a;
+@font-face {
+  font-family: "roboto";
+  src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+}
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "roboto";
+}
+header {
+  display: grid;
+}
+.nav-list {
+  list-style: none;
+  display: grid;
+  align-items: center;
+}
+.nav-section {
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: "roboto";
+  position: fixed;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  background-color: $white;
+}
+
+li > a {
+  width: 100%;
+  display: grid;
+  position: fixed;
+  margin: 0 auto;
+  text-decoration: none;
+  list-style-type: none;
+}
+// layout styles
+.nav-list__item {
+  text-decoration: none;
+  padding-bottom: 1em;
+}
+.schedule-button,
+.chat-description form input[type="submit"] {
+  background-color: var(--primary-color);
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  width: 8em;
+  text-align: center;
+  display: inline-block;
+  padding: 0.5em;
+}
+
+.schedule-tour {
+  background-color: $blue;
+  color: $white;
+  &:hover {
+    background-color: $green;
+  }
+}
+.schedule-button {
+  border-radius: 5%;
+}
+
+.schedule-tour:hover {
+  background-color: $green;
+}
+
+.player {
+  display: flex;
+  justify-self: center;
+}
+
+.player:hover {
+  background-color: $yellow;
+}
+
+.testimonials-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.testimonial-1,
+.testimonial-2 {
+  display: flex;
+}
+.video2 {
+  display: flex;
+}
+
+.se-section,
+.ux-section,
+.digital-section {
+  display: grid;
+  justify-items: center;
+  padding: 1em;
+  line-height: 1em;
+  border: solid $white;
+}
+
+.programs-question > p {
+  color: $purple;
+}
+.programs-question > h2 {
+  text-align: center;
+}
+
+h4:hover,
+.programs-question > p:hover {
+  background-color: $green;
+}
+
+h4 {
+  color: $purple;
+}
+
+.course-2,
+.course-1,
+.course-3 {
+  font-size: 2rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.date-1,
+.date-2,
+.date-3 {
+  border: solid $blue;
+  background-color: $blue;
+  color: $white;
+}
+
+.learn-to-1,
+.learn-to-2,
+.learn-to-3 {
+  border: solid $blue;
+  color: $white;
+  background-color: $blue;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.learn-to-1:hover,
+.learn-to-2:hover,
+.learn-to-3:hover {
+  background-color: $green;
+}
+
+img {
+  height: 50px;
+  width: auto;
+}
+
+.members-wrapper {
+  display: grid;
+  padding: 10px;
+}
+
+.members-wrapper > div {
+  padding: 10px;
+  flex: 1 1 25%;
+  flex-direction: row;
+}
+
+.row-person1,
+.row-person2 {
+  display: flex;
+  justify-content: center;
+}
+
+h3 {
+  text-align: center;
+  font-weight: 900;
+}
+
+.team1,
+.team2,
+.team3,
+.team4 {
+  display: grid;
+  flex-direction: row;
+}
+
+.students-video:hover {
+  background-color: $green;
+}
+
+button {
+  border-radius: 20px;
+  background-color: $purple;
+  color: $white;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: $green;
+}
+
+.signup-section > p {
+  text-align: center;
+}
+
+// block styles
+
+.video-section {
+  display: grid;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+.video-section > h1 {
+  text-align: center;
+}
+
+.signup-section {
+  display: grid;
+  justify-items: center;
+  margin-bottom: 5rem;
+}
+
+.students {
+  display: flex;
+  justify-items: center;
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.meet-description {
+  display: grid;
+  flex-direction: row;
+  justify-items: center;
+  width: 300px;
+  margin: 1em;
+}
+
+.programs-question {
+  display: grid;
+  justify-items: center;
+  background-color: $white;
+}
+
+.class {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 3em;
+  background-color: $white;
+  border: 1px solid $blue;
+  padding-top: 1rem;
+}
+@media (min-width: 700px) {
+  .nav-list {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1em;
+  }
+  .video-section {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+  }
+  .video-section > h1,
+  p {
+    text-align: center;
+    width: 400px;
+  }
+  .testimonials-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .meet-description {
+    display: grid;
+    text-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 500px;
+    margin: 1em;
+  }
+  .members > .team-image,
+  .board-image,
+  .mentors-image,
+  .advisors-image {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+}
+@media (min-width: 1200px) {
+  .nav-list {
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    position: fixed;
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+  }
+  .meet-description {
+    display: grid;
+    text-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 900px;
+    margin: 1em;
+  }
+
+  .testimonials-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .members-wrapper {
+    display: flex;
+    padding: 10px;
+  }
+
+  .members-wrapper > div {
+    padding: 10px;
+    flex: 1 1 25%;
+    flex-direction: column;
+  }
+
+  .row-person1,
+  .row-person2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .team1,
+  .team2,
+  .team3,
+  .team4 {
+    display: flex;
+    flex-direction: column;
+  }
+  .students {
+    display: grid;
+    justify-items: center;
+    margin-top: 3rem;
+    padding-bottom: 2rem;
+  }
+}

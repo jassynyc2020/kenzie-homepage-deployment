@@ -1,0 +1,456 @@
+/* Mobile style */
+@font-face {
+  font-family: "roboto";
+  src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "roboto";
+}
+
+header {
+  display: -ms-grid;
+  display: grid;
+}
+
+.nav-list {
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-section {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+  font-family: "roboto";
+  position: fixed;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+li > a {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  position: fixed;
+  margin: 0 auto;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.nav-list__item {
+  text-decoration: none;
+  padding-bottom: 1em;
+}
+
+.schedule-button,
+.chat-description form input[type="submit"] {
+  background-color: var(--primary-color);
+  text-decoration: none;
+  color: white;
+  width: 8em;
+  text-align: center;
+  display: inline-block;
+  padding: 0.5em;
+}
+
+.schedule-tour {
+  background-color: #1e84ea;
+  color: #ffffff;
+}
+
+.schedule-tour:hover {
+  background-color: #34eb7a;
+}
+
+.schedule-button {
+  border-radius: 5%;
+}
+
+.schedule-tour:hover {
+  background-color: #34eb7a;
+}
+
+.player {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
+}
+
+.player:hover {
+  background-color: #ebd834;
+}
+
+.testimonials-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.testimonial-1,
+.testimonial-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.video2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.se-section,
+.ux-section,
+.digital-section {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  padding: 1em;
+  line-height: 1em;
+  border: solid #ffffff;
+}
+
+.programs-question > p {
+  color: #4251f5;
+}
+
+.programs-question > h2 {
+  text-align: center;
+}
+
+h4:hover,
+.programs-question > p:hover {
+  background-color: #34eb7a;
+}
+
+h4 {
+  color: #4251f5;
+}
+
+.course-2,
+.course-1,
+.course-3 {
+  font-size: 2rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.date-1,
+.date-2,
+.date-3 {
+  border: solid #1e84ea;
+  background-color: #1e84ea;
+  color: #ffffff;
+}
+
+.learn-to-1,
+.learn-to-2,
+.learn-to-3 {
+  border: solid #1e84ea;
+  color: #ffffff;
+  background-color: #1e84ea;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.learn-to-1:hover,
+.learn-to-2:hover,
+.learn-to-3:hover {
+  background-color: #34eb7a;
+}
+
+img {
+  height: 50px;
+  width: auto;
+}
+
+.members-wrapper {
+  display: -ms-grid;
+  display: grid;
+  padding: 10px;
+}
+
+.members-wrapper > div {
+  padding: 10px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.row-person1,
+.row-person2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+h3 {
+  text-align: center;
+  font-weight: 900;
+}
+
+.team1,
+.team2,
+.team3,
+.team4 {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.students-video:hover {
+  background-color: #34eb7a;
+}
+
+button {
+  border-radius: 20px;
+  background-color: #4251f5;
+  color: #ffffff;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: #34eb7a;
+}
+
+.signup-section > p {
+  text-align: center;
+}
+
+.video-section {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+.video-section > h1 {
+  text-align: center;
+}
+
+.signup-section {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  margin-bottom: 5rem;
+}
+
+.students {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.meet-description {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  justify-items: center;
+  width: 300px;
+  margin: 1em;
+}
+
+.programs-question {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  background-color: #ffffff;
+}
+
+.class {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3em;
+  background-color: #ffffff;
+  border: 1px solid #1e84ea;
+  padding-top: 1rem;
+}
+
+@media (min-width: 700px) {
+  .nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-right: 1em;
+  }
+  .video-section {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    padding: 1rem;
+  }
+  .video-section > h1,
+  p {
+    text-align: center;
+    width: 400px;
+  }
+  .testimonials-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .meet-description {
+    display: -ms-grid;
+    display: grid;
+    text-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 500px;
+    margin: 1em;
+  }
+  .members > .team-image,
+  .board-image,
+  .mentors-image,
+  .advisors-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav-list {
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+  }
+  .meet-description {
+    display: -ms-grid;
+    display: grid;
+    text-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 900px;
+    margin: 1em;
+  }
+  .testimonials-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .members-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px;
+  }
+  .members-wrapper > div {
+    padding: 10px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 25%;
+            flex: 1 1 25%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .row-person1,
+  .row-person2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .team1,
+  .team2,
+  .team3,
+  .team4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .students {
+    display: -ms-grid;
+    display: grid;
+    justify-items: center;
+    margin-top: 3rem;
+    padding-bottom: 2rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
